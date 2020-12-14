@@ -15,10 +15,14 @@
     <div class="wrapper">
 
       <div class="header-onecol">
-        <h1>Header</h1>
-        <p>My supercool header</p>
+        {% if site.header1 %}
+          <h1>{{side.header1}}</h1>
+        {% endif %}
+        {% if site.header2 %}
+          <p>{{side.header2}}</p>
+        {% endif %}
       </div>
-      
+
       <section-onecol>
 
       {{ content }}
